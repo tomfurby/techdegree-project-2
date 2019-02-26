@@ -26,6 +26,8 @@ li {
 
 h1 {
     font-size: 1.5em;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -108,10 +110,7 @@ Base Layout Styles
 
 /*------- Layout Containers -------*/
 
-header {
-    background: linear-gradient(to bottom, #414040, #666666);
-    width: 100%;
-}
+
 
 .name {
     margin-top: 35px;
