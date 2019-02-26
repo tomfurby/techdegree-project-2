@@ -158,19 +158,11 @@ Media Queries
         text-align: left;
     }
 
-    .marketing,
-    .travel,
-    .gallery {
-        float: left;
-        width: 50%;
-    }
-    .search,
-    .map,
-    .calculator {
+    .col {
+        max-width: 50%;
         float: right;
-        width: 50%;
-    }
-
+        margin: auto;
+      }
     .col p {
         padding: 0 30px 10px;
     }
@@ -213,50 +205,37 @@ Media Queries
 
     .name {
         float: left;
+        padding-left: 12px; 
     }
 
     .main-nav {
         float: right;
         margin-top: 40px;
+        padding: 0 18px;
     }
     .main-nav li {
         margin-left: -10px;
     }
 
-    /* .banner img,
-    .banner p {
-        padding: 0 20px;
-    } */
+    .banner {
+        padding: 0 32px 20px;
+    }
     .banner p {
         font-size: 1.2em;
         position: absolute;
         top: 10%;
+        width: 55%;
     }
     
     .portfolio-div {
         max-width: 1024px;
     }
 
-    .marketing,
-    .map {
-        float: left;
-        width: 30%;
-    }
-    .travel,
-    .calculator {
+    .col {
+        max-width: 33%;
         float: right;
-        width: 30%;
-    }
-    .search, 
-    .gallery {
-        margin: 0 auto;
-        width: 30%;
-        display: inline-block;
-    }
-
-
-
-    
+        margin: auto;
+      }
 }
 
 /*-------- Float Clearfix --------*/
