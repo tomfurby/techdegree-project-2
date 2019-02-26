@@ -1,0 +1,268 @@
+/*----------------------
+ Base Element Styles 
+ -----------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;;
+    line-height: 1.6;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #dad8d8;
+    text-align: center;
+}
+
+img {
+    max-width: 80%;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    padding: 30px 0 20px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 900;
+}
+
+p {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: .9em;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    border-top: solid 1px rgb(116, 115, 115);
+}
+
+/*----------------------
+Base Layout Styles 
+-----------------------*/
+
+/*------- Navigation -------*/
+
+.name a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+
+.main-nav {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    margin-bottom: 40px;
+}
+
+.main-nav li {
+    background-color: white;
+}
+
+.footer-sm-nav {
+    width: 90%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.footer-sm-nav li {
+    margin: 16px 0;
+    float: right;
+}
+.footer-sm-nav h3 {
+    float: left;
+}
+
+.main-nav a:hover,
+.footer-sm-nav a:hover,
+.footer-md-nav a:hover {
+    color: rgb(177, 174, 174);
+}
+
+.footer-md-nav {
+    display: none;
+}
+
+/*------- Layout Containers -------*/
+
+.name {
+    margin-top: 35px;
+}
+
+.wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.portfolio-div {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    max-width: 766px;
+}
+
+/*----------------------
+Media Queries 
+-----------------------*/
+
+@media (min-width: 768px) {
+
+    body {
+        width: 90%;
+        max-width: 768px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        background-color: inherit;
+    }
+
+    .banner {
+        position: relative;
+        padding-bottom: 10px; 
+    }
+    .banner img {
+        float: right;
+        width: 40%;
+    }
+    .banner p {
+        float: left;
+        width: 60%;
+        padding-right: 12px;
+        position: absolute;
+        top: 15%;
+        text-align: left;
+    }
+
+    .marketing,
+    .travel,
+    .gallery {
+        float: left;
+        width: 50%;
+    }
+    .search,
+    .map,
+    .calculator {
+        float: right;
+        width: 50%;
+    }
+
+    .col p {
+        padding: 0 30px 10px;
+    }
+
+    .contact {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .footer-sm-nav {
+        display: none;
+    }
+    .footer-md-nav {
+        display: block;
+        text-transform: uppercase;
+    }
+    .footer-md-nav ul {
+        float: right;
+    }
+    .footer-md-nav h3 {
+        float: left;
+    }
+    .footer-md-nav li {
+        display: inline-block;
+        padding-left: 10px;
+        font-weight: 900;
+        margin: 16px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        width: 80%;
+        max-width: 1024px;
+    }
+    .wrapper {
+        max-width: 966px;
+    }
+
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+        margin-top: 40px;
+    }
+    .main-nav li {
+        margin-left: -10px;
+    }
+
+    /* .banner img,
+    .banner p {
+        padding: 0 20px;
+    } */
+    .banner p {
+        font-size: 1.2em;
+        position: absolute;
+        top: 10%;
+    }
+    
+    .portfolio-div {
+        max-width: 1024px;
+    }
+
+    .marketing,
+    .map {
+        float: left;
+        width: 30%;
+    }
+    .travel,
+    .calculator {
+        float: right;
+        width: 30%;
+    }
+    .search, 
+    .gallery {
+        margin: 0 auto;
+        width: 30%;
+        display: inline-block;
+    }
+
+
+
+    
+}
+
+/*-------- Float Clearfix --------*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
