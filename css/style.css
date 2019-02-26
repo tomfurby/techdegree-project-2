@@ -108,6 +108,11 @@ Base Layout Styles
 
 /*------- Layout Containers -------*/
 
+header {
+    background: linear-gradient(to bottom, #414040, #666666);
+    width: 100%;
+}
+
 .name {
     margin-top: 35px;
 }
