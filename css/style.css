@@ -55,7 +55,7 @@ a {
 }
 
 footer {
-    border-top: solid 1px rgb(116, 115, 115);
+    border-top: solid 1px #747373;
 }
 
 /*----------------------
@@ -109,8 +109,6 @@ Base Layout Styles
 
 /*------- Layout Containers -------*/
 
-
-
 .name {
     margin-top: 35px;
 }
@@ -122,10 +120,36 @@ Base Layout Styles
 }
 
 .portfolio-div {
-    margin-bottom: 15px;
     padding-bottom: 10px;
     background-color: #fff;
     max-width: 766px;
+}
+
+.skills {
+    width: 100%;
+    border-bottom: 1px solid #747373;
+    border-top: 1px solid #747373;
+    background: #696969;
+    color: rgb(247, 232, 168);
+}
+
+.skills li {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 10px 35px;
+    text-align: center;
+    -webkit-transition: letter-spacing 1s;
+    transition: letter-spacing 1s;
+}
+
+.skills li:hover {
+    letter-spacing: 3px;
+
+}
+
+.footer-name {
+    font-family: 'Gloria Hallelujah', cursive;
+    text-transform: uppercase;
 }
 
 /*----------------------
@@ -159,6 +183,7 @@ Media Queries
         position: absolute;
         top: 15%;
         text-align: left;
+        font-size: 1em;
     }
 
     .col {
@@ -238,6 +263,7 @@ Media Queries
         max-width: 33%;
         float: right;
         margin: auto;
+        padding-bottom: 10px;
       }
 }
 
