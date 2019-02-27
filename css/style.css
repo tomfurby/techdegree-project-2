@@ -230,10 +230,7 @@ Media Queries
 
     body {
         width: 80%;
-        max-width: 1024px;
-    }
-    .wrapper {
-        max-width: 966px;
+        max-width: 1300px;
     }
 
     .name {
@@ -261,7 +258,7 @@ Media Queries
     }
     
     .portfolio-div {
-        max-width: 1024px;
+        max-width: 1300px;
     }
 
     .col {
